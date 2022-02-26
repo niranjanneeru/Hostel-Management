@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="520.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="me.nadha.hostelmanagement.LoginController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="228.0" style="-fx-background-color: #a0000;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="brandingImageView" fitHeight="368.0" fitWidth="228.0" layoutX="4.0" layoutY="16.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/dsh1.jpg"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="307.0" style="-fx-background-color: #eceec7;"
+                    BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="usernameLabel" layoutX="21.0" layoutY="120.0" text="Username"/>
+                <TextField fx:id="usernameField" layoutX="96.0" layoutY="116.0" prefHeight="24.0" prefWidth="160.0"/>
+                <Label fx:id="passwordLabel" layoutX="21.0" layoutY="169.0" text="Password"/>
+                <PasswordField fx:id="passwordField" layoutX="97.0" layoutY="165.0" prefHeight="24.0"
+                               prefWidth="155.0"/>
+                <Button fx:id="loginButton" layoutX="26.0" layoutY="277.0" mnemonicParsing="false"
+                        onAction="#loginButtonOnAction" prefHeight="24.0" prefWidth="242.0" text="Login"
+                        textFill="#c91c1c"/>
+                <Button fx:id="cancelButton" layoutX="26.0" layoutY="324.0" mnemonicParsing="false"
+                        onAction="#cancelButtonOnAction" prefHeight="24.0" prefWidth="242.0" text="Cancel"
+                        textFill="#c91c1c"/>
+                <Label fx:id="loginMsgLabel" layoutX="32.0" layoutY="234.0" prefHeight="16.0" prefWidth="231.0"
+                       text="Invalid login. Please try again!" textFill="#eb0101"/>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
